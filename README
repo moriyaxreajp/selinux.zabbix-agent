@@ -1,0 +1,36 @@
+README
+
+"zabbix-agent.te" for selinux TE(Type Enforcement)
+
+----
+
+[first step]
+
+1.
+
+# wget https://raw.github.com/moriyaxreajp/selinux.zabbix-agent/master/zabbix-agent.te
+
+2.
+
+# cp zabbix-agent.te /usr/share/selinux/devel/
+
+3.
+
+# cd /usr/share/selinux/devel/
+
+4.
+
+# make
+
+5.
+
+# semodule -i zabbix-agent.pp 
+
+----
+
+[check]
+
+# audit2allow -a -l -r 
+
+
+EOF
